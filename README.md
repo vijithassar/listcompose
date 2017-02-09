@@ -58,24 +58,24 @@ This can be particularly useful as an intermediate validation stage for enforcin
 var composition = listcompose([g, f], function(current, index) {
     var measurement,
         unit,
-        structured
+        structured;
     if (typeof current() === 'string') {
         // convert substrings to desired data types
-        measurement = +current().split(' ')[0]
-        unit = current().split(' ')[1]
+        measurement = +current().split(' ')[0];
+        unit = current().split(' ')[1];
         // always return a function
         validated = function() {
             // structure substrings
-            var structured
+            var structured;
             structured = {
                 measurement: measurement,
                 unit: unit
-            }
-            return structured
-        }
-        return validated
+            };
+            return structured;
+        };
+        return validated;
     } else {
-        return current
+        return current;
     }
 });
 ```
