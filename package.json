@@ -1,6 +1,6 @@
 {
   "name": "listcompose",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "function composition with arrays",
   "main": "./build/listcompose.js",
   "scripts": {

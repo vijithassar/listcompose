@@ -37,11 +37,18 @@ Or just include as a script tag:
 
 # Usage
 
-Compositions are based on an input array of functions.
+Compositions are based on an input array of functions. So instead of the usual syntax...
+
+```javascript
+var composition = function(x) {
+  return f(g(x));
+};
+```
+
+...we can use an array:
 
 ```javascript
 var composition = listcompose([g, f]);
-composition(x);
 ```
 
 # Callbacks
@@ -58,7 +65,7 @@ This can be particularly useful as an intermediate validation stage for enforcin
 var composition = listcompose([g, f], function(current, index) {
     var measurement,
         unit,
-        structured;
+        validated;
     if (typeof current() === 'string') {
         // convert substrings to desired data types
         measurement = +current().split(' ')[0];
