@@ -34,7 +34,7 @@ describe('module', function() {
         let functions = [
             x => 'a' + x,
         ]
-        let composed = listcompose(functions, function(current, index) {
+        listcompose(functions, function(current, index) {
             assert(index === 1)
         })
     })
