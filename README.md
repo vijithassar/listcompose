@@ -7,9 +7,9 @@ JavaScript function composition through arrays
 JavaScript code can be written in a [functional style](https://en.wikipedia.org/wiki/Functional_programming). This relies on:
 
 1. [array iteration methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Iteration_methods), which traverse an array while operating on it
-2. [function composition](https://en.wikipedia.org/wiki/Function_composition), in which JavaScript's [first class functions](https://en.wikipedia.org/wiki/First-class_function) are used as the inputs and outputs to other functions such that small, clean, stable pieces of functionality can be combined to create powerful aggregates.
+2. [function composition](https://en.wikipedia.org/wiki/Function_composition), in which JavaScript's [first class functions](https://en.wikipedia.org/wiki/First-class_function) are used as the inputs and outputs to other functions such that small, clean, stable pieces of functionality can be combined to create powerful aggregates
 
-But typically we write function compositions as follows:
+Typically we write function compositions as follows:
 
 ```javascript
 // compose functions f and g
@@ -26,7 +26,7 @@ But wait, why not compose functions based on list iteration instead? Let's make 
 Install via [npm](https://www.npmjs.com/package/listcompose):
 
 ```javascript
-npm install rerandom
+npm install listcompose
 ```
 
 Or just include as a script tag:
